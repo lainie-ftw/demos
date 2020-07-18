@@ -1,0 +1,14 @@
+---
+- name: apply updates - windows
+  hosts: windows
+  become: true
+  gather_facts: false
+
+  tasks:
+  - name: Update all security, critical, and rollup updates
+    win_updates:
+      category_names:
+        - SecurityUpdates
+        - CriticalUpdates
+        - UpdateRollups
+

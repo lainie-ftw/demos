@@ -1,0 +1,12 @@
+---
+- name: apply updates - linux
+  hosts: linux
+  become: true
+  gather_facts: false
+
+  tasks:
+  - name: upgrade all packages
+    yum:
+      name: '*'
+      state: latest
+
