@@ -20,11 +20,7 @@
     user: name={{ item }} group={{ group_name }} comment='created with developer-self-provision playbook'
     with_items: " {{user_IDs}} "
 
-  - name: Add file mounts
-
-  - name: Change the banner to say what type of machine it is
-
   - name: Put in Ansible inventory group {{ machine_type }}
-      add_host:
-        name: '{{ node_name }}'
-        groups: '{{ machine_type }}'
+    add_host:
+      name: '{{ node_name }}'
+      groups: '{{ machine_type }}'
