@@ -1,5 +1,5 @@
 ---
-- name: apply updates - windows
+- name: set up machine with developer self-provision
   hosts: "{{ node_name }}"
   become: true
   gather_facts: false
