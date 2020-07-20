@@ -1,5 +1,5 @@
 ---
-- name: Create and configure a logical volume
+- name: Create and configure a logical volume, adapted from https://www.linuxsysadmins.com/creating-logical-volume-using-ansible/
   hosts: "{{ node_name }}"
   become: true
 
