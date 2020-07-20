@@ -1,6 +1,6 @@
 ---
 - name: apply updates - linux
-  hosts: linux
+  hosts: "{{ hosts }}"
   become: true
   gather_facts: false
 
