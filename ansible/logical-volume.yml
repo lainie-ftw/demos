@@ -2,6 +2,9 @@
 - name: Create and configure a logical volume, adapted from https://www.linuxsysadmins.com/creating-logical-volume-using-ansible/
   hosts: "{{ node_name }}"
   become: true
+  vars: 
+    vg_name: vol_group
+    lv_name: logical_volume
 
   tasks:
     - name: Create the "{{ vg_name }}" Volume group.
