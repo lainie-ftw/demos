@@ -1,6 +1,6 @@
 #!/usr/bin/env bash 
 
-# author: Laine Vyvyan @lainie-ftw laine.vyvyan@gmail.com
+# author: Laine Minor @lainie-ftw lainelminor@gmail.com
 # author: Joshua Smith @joshmsmith joshmsmith@gmail.com
 
 #Setting up some colors for helping read the demo output
